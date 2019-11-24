@@ -1,0 +1,38 @@
+<div class="jumbotron">
+    <div class="text-center">
+        <h1>STAR WARS</h1>
+        <p class="lead">A Simple App</p>
+    </div>
+</div>
+
+<div class="cList col-md-6 col-md-offset-3">
+
+    <ol>
+
+        <div class="panel panel-default" ng-repeat="person in data">
+
+
+            <li>
+                <div class="panel-heading">
+
+                    <h2>{{ person.name }}</h2>
+                    <p><b>Gender: </b>{{ person.gender }}</p>
+                    <p><b>Films: </b>{{ person.films.length }}</p>
+                </div>
+
+                <div class="panel-body">
+
+                    <a href="#/character/{{ person.name }}">
+                        <button class="btn btn-primary">
+                            VIEW MORE DETAILS
+                        </button>
+                    </a>
+
+
+                </div>
+            </li>
+        </div>
+
+
+    </ol>
+</div>
